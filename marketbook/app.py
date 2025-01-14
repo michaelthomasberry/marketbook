@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-dsfdsf
-=======
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import joinedload
@@ -16,16 +13,12 @@ import numpy as np #Import numpy
 from werkzeug.utils import secure_filename #Import secure_filename
 import os
 from datetime import datetime #Import datetime for date handling
->>>>>>> f875198729603f5bb362fca146137358efecba22
-
-<<<<<<< HEAD
-
-=======
 
 
-app.static_folder = 'static'
+
 #################Configurations#####################
 app = Flask(__name__)
+app.static_folder = 'static'
 app.config['SECRET_KEY'] = 'your_secret_key'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 # Mail Configuration
@@ -703,45 +696,3 @@ if __name__ == '__main__':
         db.create_all() #Creates the database if it doesn't exist
     app.run(debug=True)
 
-
-
-#I want the app to be updated to reflect my brand identity, which uses a Royal Blue (#4169E1) and Metallic Silver (#C0C0C0) color scheme. Here are the detailed design guidelines, including typography:
-
-#1. Colors:
-#Backgrounds:
-#Primary Background: Use White (#FFFFFF) or Light Gray (#F5F5F5) for the main background to enhance readability.
-#Section Backgrounds: Apply Light Gray (#F5F5F5) for subtle differentiation between sections.
-#Text:
-#Primary Text: Use Dark Gray (#333333) for body text.
-#Headings: Use Navy Blue (#000080) to complement the royal blue theme.
-#Links: Apply Royal Blue (#4169E1) for hyperlinks.
-#Buttons and Call-to-Action Elements:
-#Primary Buttons: Use Royal Blue (#4169E1) for the background with White (#FFFFFF) text.
-#Secondary Buttons: Use Metallic Silver (#C0C0C0) with Dark Gray (#333333) text.
-#Navigation Bar:
-#Background: Apply Royal Blue (#4169E1) as the background color.
-#Text: Use White (#FFFFFF) for navigation links.
-#Footer:
-#Background: Use Dark Gray (#333333) for the footer background.
-#Text: Apply White (#FFFFFF) for footer links and content.
-#Icons and Graphics:
-#Primary Icons: Use Royal Blue (#4169E1) for brand consistency.
-#Secondary Icons: Use Metallic Silver (#C0C0C0) for variety.
-#Forms and Input Fields:
-#Background: Use White (#FFFFFF) for input fields.
-#Borders: Apply Light Gray (#D3D3D3) for subtle outlines.
-#Text: Use Dark Gray (#333333) for placeholder text and user input.
-#Alerts and Notifications:
-#Success Messages: Use a green shade for success.
-#Error Messages: Use a red shade for errors.
-#Information Messages: Use a yellow or blue shade for information.
-#2. Typography:
-#Use Roboto as the primary font for all text elements on the website.Headings: Use Roboto in bold weights to create emphasis and hierarchy.
-#Body Text: Use Roboto in regular weights for readability and a clean appearance.
-#Font Sizes:
-#Headings: Adjust sizes proportionally (e.g., H1 = 32px, H2 = 28px, H3 = 24px, etc.).
-#Body Text: Use 16px to 18px for the primary content.
-#Line Height: Ensure sufficient line height (1.5–1.8) for readability.
-#Instructions:
-
->>>>>>> f875198729603f5bb362fca146137358efecba22
