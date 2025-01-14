@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+dsfdsf
+=======
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import joinedload
@@ -13,7 +16,11 @@ import numpy as np #Import numpy
 from werkzeug.utils import secure_filename #Import secure_filename
 import os
 from datetime import datetime #Import datetime for date handling
+>>>>>>> f875198729603f5bb362fca146137358efecba22
 
+<<<<<<< HEAD
+
+=======
 
 
 app.static_folder = 'static'
@@ -736,3 +743,5 @@ if __name__ == '__main__':
 #Body Text: Use 16px to 18px for the primary content.
 #Line Height: Ensure sufficient line height (1.5–1.8) for readability.
 #Instructions:
+
+>>>>>>> f875198729603f5bb362fca146137358efecba22
